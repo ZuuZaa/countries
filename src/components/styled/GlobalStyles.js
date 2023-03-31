@@ -8,9 +8,13 @@ export const GlobalStyles = createGlobalStyle`
       padding: 0;
       margin: 0;
   }
+  html {
+    font-size: 62.5%;
+  }
   body {
-    background: ${({theme}) => theme.colors.background};
-    color: ${({theme}) => theme.colors.primary};
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+    transition: all 0.50s linear;
   }
     
   ul {
