@@ -8,6 +8,7 @@ export const Button = styled.button`
   cursor: pointer,
   font-size: 1.1rem;
   font-weight: 300;
+  transition: all .3s;
 
   img {
     width: 1.5rem;
@@ -16,4 +17,7 @@ export const Button = styled.button`
     filter: ${({ theme }) => theme.icon};
   }
   
+  &:hover {
+    transform: scale(1.04)
+  }
   `;

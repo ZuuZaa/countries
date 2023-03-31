@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { useTheme } from '../context/theme'
 import { darkTheme, lightTheme } from '../utils/Theme'
@@ -8,13 +9,12 @@ import { GlobalStyles } from './styled/GlobalStyles'
 export const MainLayout = () => {
 
     const { theme } = useTheme()
-
     return (
         <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
             <GlobalStyles />
             <Header />
             <Container paddingBlock='4.6rem'>
-                countries
+                <Outlet/>
             </Container>
         </ThemeProvider>
     )
