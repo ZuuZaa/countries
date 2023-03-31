@@ -15,24 +15,22 @@ export const StyledCard = styled.div `
 
     ul {
         padding: 2.4rem;
-        font-size: 1.4rem;
 
         h2 {
+            font-size: 1.6rem;
             font-weight: 600;
             margin-bottom: 2rem;     
         }
 
         li {
+            font-size: 1.4rem;
             font-weight: 300;
             margin-bottom: 1.2rem;
-            
         }
     }
 
     &:hover {
-        transform: scale(1.04)
+        transform: scale(1.04);
+        box-shadow: 0px 7px 15px -3px rgba(0,0,0,0.2);
     }
-
-
-    
 `

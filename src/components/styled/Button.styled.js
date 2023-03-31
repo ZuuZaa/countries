@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Button = styled.button`
   background: inherit;
@@ -20,4 +20,4 @@ export const Button = styled.button`
   &:hover {
     transform: scale(1.04)
   }
-  `;
+  `
